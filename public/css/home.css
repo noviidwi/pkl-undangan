@@ -209,7 +209,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 .midPage {
     overflow: hidden;
-    background-color: #415262;
+    background-color: #1D5D9B;
     width: 100%;
     padding-top: 50px;
     background-image: url(../home/bg.png);
@@ -321,7 +321,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 .payMethod {
     width: 100%;
-    background-color: #415262;
+    background-color: #1D5D9B;
     background-image: url(../home/bg2.png);
     background-position: center left;
     background-attachment: fixed;
