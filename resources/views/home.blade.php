@@ -50,19 +50,19 @@
                 <img src="{{ asset('Mockup/sp.png') }}">
                 <div class="price">Rp. 30.000</div>
                 <div class="title">Simplify-Pinky</div>
-                <a href="/yoga-sarah" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
+                <a href="/yoga-sarah" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/sn.png') }}">
                 <div class="price">Rp. 30.000</div>
                 <div class="title">Simplify-Navue</div>
-                <a href="/rizky-amalia" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
+                <a href="/rizky-amalia" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/jp.png') }}">
                 <div class="price">Rp. 40.000</div>
                 <div class="title">Javva-Pinky</div>
-                <a href="/dwi-indah" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
+                <a href="/dwi-indah" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/jn.png') }}">
@@ -74,7 +74,7 @@
     </div>
     <div class="payMethod" id="method">
       <div class="header">
-        Langkah untuk melakukan pembelian 
+        Langkah-Langkah Pembelian
       </div>
       <div class="gridWrapper">
         <div class="card">
