@@ -34,7 +34,7 @@
             </div>
             <a href="https://wa.me/6289657670704" target="_blank">Pesan Sekarang</a>
         </div>
-        <img src="{{ asset('home/homeMockup.png') }}"class="mockupAnimation">
+        <img src="{{ asset('home/homeMockup1.png') }}"class="mockupAnimation">
     </div>
     </div>
     <div class="midPage">
@@ -57,6 +57,12 @@
                 <div class="price">Rp. 30.000</div>
                 <div class="title">Simplify-Navue</div>
                 <a href="/rizky-amalia" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-once="true">
+                <img src="{{ asset('Mockup/sb.png') }}">
+                <div class="price">Rp. 30.000</div>
+                <div class="title">Simplify-Bream</div>
+                <a href="/dicky-desi" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/jp.png') }}">

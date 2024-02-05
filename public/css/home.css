@@ -37,17 +37,20 @@ html::-webkit-scrollbar-thumb:hover {
 }
 .mainPage .mockupAnimation{
     top: 0;
-    right: 0;
+    right: 7px;
     z-index: 1;
     position: absolute;
-    animation: mockupAnimation 5s infinite alternate ease-in-out;
+    width: 400px; /* Menambahkan lebar mockup */
+    height: 600px; /* Menambahkan tinggi mockup */
+
 }
+
 @keyframes mockupAnimation {
     from {
       transform:  translateY(0%);
     }
     to {
-      transform:  translateY(-5%);
+      transform:  translateY(5%);
     }
   }
 .mainPage .content {
