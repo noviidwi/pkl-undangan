@@ -59,15 +59,15 @@
                 <a href="/rizky-amalia" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/jp.png') }}">
-                <div class="price">Rp. 40.000</div>
-                <div class="title">Tema 3</div>
-                <a href="/dwi-indah" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
+                <img src="{{ asset('Mockup/sg.png') }}">
+                <div class="price">Rp. 30.000</div>
+                <div class="title">Simplify-Gremy</div>
+                <a href="/rizaldi-rina" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/sb.png') }}">
                 <div class="price">Rp. 30.000</div>
-                <div class="title">Tema 4</div>
+                <div class="title">Simplify-Bream</div>
                 <a href="/dicky-desi" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
             </div>
         </div>
