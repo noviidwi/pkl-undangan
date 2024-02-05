@@ -4,12 +4,13 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="{{ asset('css/body.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font.css') }}">
+    
 @endsection
 @section('container')
     <div id="beranda" class="mainPage">
-        <div class="topbar">
+        <div class="topbar" >
             <div class="wrapperTopbar">
-                <img src="{{asset('favicon/logo.png')}}">
+                <img src="{{asset('home/logo.svg')}}">
                 <div class="wrapperList">
                     <a class="redirect" href="#model">Model</a>
                     <a class="redirect" href="#method">Cara Pembelian</a>
@@ -18,13 +19,18 @@
                     <div class="hamburger"></div>
                 </div>
             </div>
+            <div class="wrapperListMenu">   
+                <a class="listMenu" href="#beranda">Beranda</a>
+                <a class="listMenu" href="#model">Model</a>
+                <a class="listMenu" href="#method">Cara Pembelian</a>
+            </div>
         </div>
         <div class="content" data-aos="fade-right" data-aos-once="true">
             <div class="headerContent">
                 Cerita Bahagianya
             </div>
             <div class="descContent">
-                Digitalisasikan undangan pernikahanmu dengan mudah dan banyak macam pilihan model dimulai dari 30 ribu
+                Mempermudah kamu dalam mendapatkan undangan digital
             </div>
             <a href="https://wa.me/6289657670704" target="_blank">Pesan Sekarang</a>
         </div>
@@ -86,18 +92,6 @@
                 <a href="/rizky-amalia" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/sg.png') }}">
-                <div class="price">Rp. 30.000</div>
-                <div class="title">Simplify-Gremy</div>
-                <a href="/rizaldi-rina" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
-            </div>
-            <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/sb.png') }}">
-                <div class="price">Rp. 30.000</div>
-                <div class="title">Simplify-Bream</div>
-                <a href="/dicky-desi" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
-            </div>
-            <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/jp.png') }}">
                 <div class="price">Rp. 40.000</div>
                 <div class="title">Javva-Pinky</div>
@@ -121,6 +115,30 @@
                 <div class="title">Javva-Bream</div>
                 <a href="/arif-dewi" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
             </div>
+            <div class="card" data-aos="zoom-in" data-aos-once="true">
+                <img src="{{ asset('Mockup/ln.png') }}">
+                <div class="price">Rp. 45.000</div>
+                <div class="title">Luxus-Navue</div>
+                <a href="/bima-dina" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-once="true">
+                <img src="{{ asset('Mockup/lb.png') }}">
+                <div class="price">Rp. 45.000</div>
+                <div class="title">Luxus-Bream</div>
+                <a href="/fadli-nia" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-once="true">
+                <img src="{{ asset('Mockup/lg.png') }}">
+                <div class="price">Rp. 45.000</div>
+                <div class="title">Luxus-Gremy</div>
+                <a href="/wira-fitriani" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-once="true">
+                <img src="{{ asset('Mockup/lp.png') }}">
+                <div class="price">Rp. 45.000</div>
+                <div class="title">Luxus-Pinky</div>
+                <a href="/farhan-rara" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
+            </div>
         </div>
     </div>
     <div class="payMethod" id="method">
@@ -136,7 +154,7 @@
         <div class="card">
           <div class="number">02</div>
           <div class="title">Lakukan Pembelian</div>
-          <div class="desc">Untuk melakukan pembelian, pengisian informasi, sampai ke pembayaran, Hubungi kami di <a href="https://wa.me/6289657670704">whatsapp</a>,</div>
+          <div class="desc">Untuk melakukan pembelian, pengisian informasi, sampai ke pembayaran, Hubungi kami di <a href="https://wa.me/6285219387646">whatsapp</a>,</div>
         </div>
         <div class="card">
           <div class="number">03</div>
