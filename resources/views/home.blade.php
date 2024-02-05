@@ -19,11 +19,6 @@
                     <div class="hamburger"></div>
                 </div>
             </div>
-            <div class="wrapperListMenu">   
-                <a class="listMenu" href="#beranda">Beranda</a>
-                <a class="listMenu" href="#model">Model</a>
-                <a class="listMenu" href="#method">Cara Pembelian</a>
-            </div>
         </div>
         <div class="content" data-aos="fade-right" data-aos-once="true">
             <div class="headerContent">
@@ -65,16 +60,16 @@
                 <a href="/dicky-desi" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/jp.png') }}">
-                <div class="price">Rp. 40.000</div>
+                <img src="{{ asset('Mockup/sg.png') }}">
+                <div class="price">Rp. 30.000</div>
                 <div class="title">Tema 3</div>
-                <a href="/dwi-indah" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
+                <a href="/rizaldi-rina" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/jn.png') }}">
-                <div class="price">Rp. 40.000</div>
+                <img src="{{ asset('Mockup/sb.png') }}">
+                <div class="price">Rp. 30.000</div>
                 <div class="title">Tema 4</div>
-                <a href="/budi-maya" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
+                <a href="/dicky-desi" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
         </div>
     </div>

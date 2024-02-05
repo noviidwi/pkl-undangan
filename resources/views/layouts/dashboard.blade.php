@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard </title>
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="{{asset('css/dashboard/dashboard.css')}}">
     <link rel="stylesheet" href="{{asset('css/font.css')}}">
     @yield('css')
@@ -12,9 +13,6 @@
 <body >
     <div class="container">
         <div class="sidebar">
-            <div class="header">
-                <img src="{{asset('favicon/logo.png')}}">
-            </div>
             <div class="flexBeetween">
                 <div class="flexMenu">
                     <a href="/dashboard"><img src="{{asset('svg/other/home.svg')}}"> Home</a>
@@ -28,8 +26,13 @@
             </div>
         </div>
         <div class="mainbar">
-            <div class="topbar">
-                <div class="clock"></div>
+            <div class="topbar" >
+                <div class="wrapperTopbar">
+                    <img src="{{asset('favicon/logo.png')}}">
+                    <div class="hamburger-menu">
+                        <div class="hamburger"></div>
+                    </div>
+                </div>
             </div>
             <div class="contentMainbar">
                 @yield('mainbar')

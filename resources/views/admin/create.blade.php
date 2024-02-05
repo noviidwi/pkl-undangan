@@ -39,7 +39,6 @@
                 <select name="model" id="model">
                     <option value="javva">Javva</option>
                     <option value="simplify">Simplify</option>
-                    <option value="luxus">Luxus</option>
                 </select>
             </div>
             <div class="warna-model">
