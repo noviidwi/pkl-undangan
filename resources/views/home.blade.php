@@ -34,7 +34,7 @@
             </div>
             <a href="https://wa.me/6289657670704" target="_blank">Pesan Sekarang</a>
         </div>
-        <img src="{{ asset('home/homeMockup.png') }}"class="mockupAnimation">
+        <img src="{{ asset('home/homeMockup1.png') }}" class="mockupAnimation">
     </div>
     </div>
     <div class="midPage">
@@ -49,32 +49,32 @@
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/sp.png') }}">
                 <div class="price">Rp. 30.000</div>
-                <div class="title">Simplify-Pinky</div>
+                <div class="title">Tema 1</div>
                 <a href="/yoga-sarah" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/sn.png') }}">
                 <div class="price">Rp. 30.000</div>
-                <div class="title">Simplify-Navue</div>
+                <div class="title">Tema 2</div>
                 <a href="/rizky-amalia" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/jp.png') }}">
                 <div class="price">Rp. 40.000</div>
-                <div class="title">Javva-Pinky</div>
+                <div class="title">Tema 3</div>
                 <a href="/dwi-indah" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/jn.png') }}">
                 <div class="price">Rp. 40.000</div>
-                <div class="title">Javva-Navue</div>
-                <a href="/budi-maya" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
+                <div class="title">Tema 4</div>
+                <a href="/budi-maya" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
         </div>
     </div>
     <div class="payMethod" id="method">
       <div class="header">
-        Langkah-Langkah Pembelian
+        <h1>Langkah-Langkah Pembelian</h1>
       </div>
       <div class="gridWrapper">
         <div class="card">
@@ -85,7 +85,7 @@
         <div class="card">
           <div class="number">02</div>
           <div class="title">Lakukan Pembelian</div>
-          <div class="desc">Untuk melakukan pembelian, pengisian informasi, sampai ke pembayaran, Hubungi kami di <a href="https://wa.me/6285219387646">whatsapp</a>,</div>
+          <div class="desc">Untuk melakukan pembelian, pengisian informasi, sampai ke pembayaran, Hubungi kami di <a href="https://wa.me/6285219387646" target="_blank">whatsapp</a>,</div>
         </div>
         <div class="card">
           <div class="number">03</div>

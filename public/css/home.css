@@ -35,19 +35,24 @@ html::-webkit-scrollbar-thumb:hover {
     overflow: hidden;
     position: relative;
 }
+
 .mainPage .mockupAnimation{
     top: 0;
     right: 0;
     z-index: 1;
     position: absolute;
     animation: mockupAnimation 5s infinite alternate ease-in-out;
+    width: 400px;
+    height: 500px;
+    margin-right: 240px;
 }
+
 @keyframes mockupAnimation {
     from {
-      transform:  translateY(0%);
+      transform:  translateY(20%);
     }
     to {
-      transform:  translateY(-5%);
+      transform:  translateY(20%);
     }
   }
 .mainPage .content {
@@ -384,10 +389,12 @@ html::-webkit-scrollbar-thumb:hover {
     .mainPage .descContent {
         width: 350px;
     }
+
     .viewModel .gridWrapper {
         grid-template-columns: repeat(3 , 33%);
     }
 }
+
 @media screen and (max-width:800px) {
     .mainPage .mockupAnimation{
         opacity: .1;
