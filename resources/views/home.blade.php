@@ -19,11 +19,6 @@
                     <div class="hamburger"></div>
                 </div>
             </div>
-            <div class="wrapperListMenu">   
-                <a class="listMenu" href="#beranda">Beranda</a>
-                <a class="listMenu" href="#model">Model</a>
-                <a class="listMenu" href="#method">Cara Pembelian</a>
-            </div>
         </div>
         <div class="content" data-aos="fade-right" data-aos-once="true">
             <div class="headerContent">
