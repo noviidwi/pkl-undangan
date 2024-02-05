@@ -84,18 +84,6 @@
                 <a href="/rizky-amalia" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/sg.png') }}">
-                <div class="price">Rp. 30.000</div>
-                <div class="title">Simplify-Gremy</div>
-                <a href="/rizaldi-rina" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
-            </div>
-            <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/sb.png') }}">
-                <div class="price">Rp. 30.000</div>
-                <div class="title">Simplify-Bream</div>
-                <a href="/dicky-desi" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
-            </div>
-            <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/jp.png') }}">
                 <div class="price">Rp. 40.000</div>
                 <div class="title">Javva-Pinky</div>
@@ -106,18 +94,6 @@
                 <div class="price">Rp. 40.000</div>
                 <div class="title">Javva-Navue</div>
                 <a href="/budi-maya" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
-            </div>
-            <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/jg.png') }}">
-                <div class="price">Rp. 40.000</div>
-                <div class="title">Javva-Gremy</div>
-                <a href="/adnan-anisa" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
-            </div>
-            <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/jb.png') }}">
-                <div class="price">Rp. 40.000</div>
-                <div class="title">Javva-Bream</div>
-                <a href="/arif-dewi" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
                 <img src="{{ asset('Mockup/ln.png') }}">
