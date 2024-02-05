@@ -65,10 +65,10 @@
                 <a href="/dwi-indah" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-once="true">
-                <img src="{{ asset('Mockup/jn.png') }}">
-                <div class="price">Rp. 40.000</div>
+                <img src="{{ asset('Mockup/sb.png') }}">
+                <div class="price">Rp. 30.000</div>
                 <div class="title">Tema 4</div>
-                <a href="/budi-maya" target="_blank"><img src="{{ asset('home/eye.svg') }}">Preview</a>
+                <a href="/dicky-desi" target="_blank"><img src="{{ asset('home/eye.svg') }}"> lihat demo</a>
             </div>
         </div>
     </div>
