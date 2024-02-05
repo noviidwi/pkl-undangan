@@ -4,32 +4,25 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="{{ asset('css/body.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font.css') }}">
+    
 @endsection
 @section('container')
     <div id="beranda" class="mainPage">
-        <div class="topbar">
+        <div class="topbar" >
             <div class="wrapperTopbar">
-                <img src="{{asset('home/logo.svg')}}">
+                <img src="{{asset('favicon/logo.png')}}" class>
                 <div class="wrapperList">
                     <a class="redirect" href="#model">Model</a>
                     <a class="redirect" href="#method">Cara Pembelian</a>
                 </div>
-                <div class="hamburger-menu">
-                    <div class="hamburger"></div>
-                </div>
-            </div>
-            <div class="wrapperListMenu">   
-                <a class="listMenu" href="#beranda">Beranda</a>
-                <a class="listMenu" href="#model">Model</a>
-                <a class="listMenu" href="#method">Cara Pembelian</a>
             </div>
         </div>
         <div class="content" data-aos="fade-right" data-aos-once="true">
             <div class="headerContent">
-                DiUndang
+                Cerita Bahagianya
             </div>
             <div class="descContent">
-                Digitalisasikan undangan pernikahanmu dengan mudah dan banyak macam pilihan model dimulai dari 30 ribu
+                Mempermudah kamu dalam mendapatkan undangan digital
             </div>
             <a href="https://wa.me/6289657670704" target="_blank">Pesan Sekarang</a>
         </div>
@@ -165,7 +158,7 @@
         <div class="card">
           <div class="number">02</div>
           <div class="title">Lakukan Pembelian</div>
-          <div class="desc">Untuk melakukan pembelian, pengisian informasi, sampai ke pembayaran, Hubungi kami di <a href="https://wa.me/6289657670704">whatsapp</a>,</div>
+          <div class="desc">Untuk melakukan pembelian, pengisian informasi, sampai ke pembayaran, Hubungi kami di <a href="https://wa.me/6285219387646">whatsapp</a>,</div>
         </div>
         <div class="card">
           <div class="number">03</div>
