@@ -4,7 +4,7 @@
 @endsection
 @section('mainbar')
     <div class="search">
-        <form action="/dashboard/manage" method="GET">
+        <form action="/dashboard/transaksi" method="GET">
             <input type="text" name="search" placeholder="Masukkan slug">
             <button type="submit"><img src="{{asset('svg/other/search.svg')}}"></button>
         </form>
@@ -25,11 +25,8 @@
                         <th>Nomor</th>
                         <th>ID Transaksi</th>
                         <th>ID Customer</th>
-                        <th>Kupon</th>
                         <th>Tanggal Transaksi</th>
                         <th>Total Transaksi</th>
-                        <th>Bukti Transaksi</th>
-                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
