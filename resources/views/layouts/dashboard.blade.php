@@ -10,9 +10,17 @@
     <link rel="stylesheet" href="{{asset('css/font.css')}}">
     @yield('css')
 </head>
-<body >
+<body>
     <div class="container">
         <div class="sidebar">
+            <div class="header">
+                <div class="logo-container">
+                    <img src="{{asset('favicon/logo.png')}}" alt="Logo">
+                    <div class="logo-text">
+                        <span>Cerita </span>
+                    </div>
+                </div>
+            </div>
             <div class="flexBeetween">
                 <div class="flexMenu">
                     <a href="/dashboard"><img src="{{asset('svg/other/home.svg')}}"> Home</a>
@@ -26,9 +34,8 @@
             </div>
         </div>
         <div class="mainbar">
-            <div class="topbar" >
+            <div class="topbar">
                 <div class="wrapperTopbar">
-                    <img src="{{asset('favicon/logo.png')}}">
                     <div class="hamburger-menu">
                         <div class="hamburger"></div>
                     </div>
@@ -54,7 +61,7 @@
         }
 
         function checkTime(i) {
-        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        if (i < 10) {i = "0" + i};
         return i;
         }
         startTime()

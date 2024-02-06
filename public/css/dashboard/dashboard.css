@@ -12,19 +12,40 @@
     top: 0;
     z-index: 2;
     width: 270px;
-    background-color: #2E8A99;
+    background-color: #1D5D9B;
     height: 100vh;
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
-.container .sidebar .header {
-    text-align: center;
-    background-color: black;
+container .sidebar .header {
+    background-color: #f6f7f8;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+.container .sidebar .header .logo-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
 }
 .container .sidebar .header img {
-    width: 180px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    width: 60px;
+
 }
+.container .sidebar .header .logo-text {
+    margin-top: 15px;
+    margin-left: 7px;
+    color: white;
+    font-family: popin;
+    font-size: 15px; 
+    align-self: center;
+}
+
 .container .sidebar .flexBeetween {
     height: 100%;
     display: flex;
@@ -34,6 +55,7 @@
 .container .sidebar .flexMenu {
     display: flex;
     gap: 10px;
+    margin-left: 10px;
     flex-direction: column;
 }
 .container .sidebar  form {
@@ -45,7 +67,7 @@
     width: 85%;
     padding: 5px 0;
     font-family: popin;
-    background-color: greenyellow;
+    background-color: white;
     outline: none;
     border: none;
     cursor: pointer;
@@ -83,4 +105,15 @@
 }
 .container .mainbar .topbar .clock {
     padding: 5px;
+}
+
+.chart-container {
+    width: 900px;
+    height: 400px;
+    margin: 20px auto;
+}
+
+#chart {
+    width: 700%;
+    height: 700%;
 }
