@@ -31,6 +31,13 @@ class adminController extends Controller
         ]);
     }
 
+    public function transaksiIndex()
+    {
+        return view('admin.transaksi.index', [
+            'posts' => Post::select('id', 'slug', 'warna_model', 'model')->latest()->filter()->get(),
+        ]);
+    }
+
     public function updateCreate($slug)
     {
         return view('admin.edit', [
