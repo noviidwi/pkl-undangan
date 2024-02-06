@@ -7,7 +7,7 @@
 }
 
 #beranda {
-    margin-top: 20px; /* Sesuaikan dengan ukuran margin yang diinginkan */
+    margin-top: 20px;
 }
 
 *, html {
@@ -37,21 +37,22 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .mainPage .mockupAnimation{
-    top: 0;
-    right: 7px;
+    top: 150px;
+    right: 100px; 
     z-index: 1;
     position: absolute;
-    animation: mockupAnimation 5s infinite alternate ease-in-out;
+    height: 400px;
+    width: 400px;
 }
 
-@keyframes mockupAnimation {
-    from {
-      transform:  translateY(20%);
-    }
-    to {
-      transform:  translateY(-5%);
-    }
+from {
+    transform: translateY(20%) scale(1.2); 
   }
+  to {
+    transform: translateY(-5%) scale(1.2);
+  }
+
+
 .mainPage .content {
     width: var(--width);
     margin: auto;

@@ -29,7 +29,7 @@
             </div>
             <a href="https://wa.me/6289657670704" target="_blank">Pesan Sekarang</a>
         </div>
-        <img src="{{ asset('home/homeMockup.png') }}"class="mockupAnimation">
+        <img src="{{ asset('home/homeMockup1.png') }}"class="mockupAnimation">
     </div>
     </div>
     <div class="midPage">
