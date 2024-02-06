@@ -1,6 +1,18 @@
 @extends('layouts.dashboard')
 @section('css')
-    <link rel="stylesheet" href="{{asset('css/dashboard/manage.css')}}">
+    <link rel="stylesheet" href="{{asset('css/dashboard/transaksi.css')}}">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/assets/dist/css/adminlte.min.css">
 @endsection
 @section('mainbar')
     <div class="search">
@@ -30,18 +42,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {{-- @foreach ($pemasukan as $index => $data)
+                    @foreach ($transaksi as $data)
                         <tr>
-                            <td>{{ $index + 1 }}</td>
                             <td>{{ $data->id_transaksi }}</td>
                             <td>{{ $data->id_customer }}</td>
-                            <td>{{ $data->kupon }}</td>
                             <td>{{ $data->tanggal_transaksi }}</td>
-                            <td>{{ $data->total_transaksi }}</td>
-                            <td>{{ $data->bukti_transaksi }}</td>
-                            <td>{{ $data->status }}</td>
+                            <td>{{ $data->jumlah_transaksi }}</td>
                         </tr>
-                    @endforeach --}}
+                    @endforeach
                 </tbody>
             </table>
         </div>
