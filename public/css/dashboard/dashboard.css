@@ -1,4 +1,4 @@
-*, html {
+* , html {
     margin: 0;
     padding: 0;
 }
@@ -12,12 +12,7 @@
     top: 0;
     z-index: 2;
     width: 270px;
-<<<<<<< HEAD
-    background-color: #1D5D9B;
-=======
-    margin-top: 65px;
     background-color: #2E8A99;
->>>>>>> ddfcbb8dba54556f998cd5b278d94415daf88f07
     height: 100vh;
     display: flex;
     gap: 20px;
@@ -36,16 +31,11 @@ container .sidebar .header {
     padding-bottom: 10px;
 }
 .container .sidebar .header img {
-<<<<<<< HEAD
     margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 15px;
     width: 60px;
 
-=======
-    width: 180px;
-    margin-left: auto; /* Ubah dari '100px' ke 'auto' */
->>>>>>> ddfcbb8dba54556f998cd5b278d94415daf88f07
 }
 .container .sidebar .header .logo-text {
     margin-top: 15px;
@@ -62,6 +52,7 @@ container .sidebar .header {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .container .sidebar .flexMenu {
     display: flex;
     gap: 10px;
