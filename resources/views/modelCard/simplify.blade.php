@@ -139,8 +139,19 @@
                     <p>Pukul {{ $posts->jam_resepsi }}</p>
                 </div>
             </div>
+            {{-- <div class="card-event" data-aos="fade-down" data-aos-once="true">
+                <div class="background">
+                    <div class="icon-header">
+                        <img src="{{ asset('svg/simplify/location.svg') }}">
+                    </div>
+                    <h2>Lokasi Acara</h2>
+                    {!! $posts->iframe !!}
+                </div>
+            </div>
         </div>
         <img class="wave" src="{{ asset('svg/simplify/'. $posts->warna_model .'/waveUp.svg') }}">
+        <img class="wave" src="{{ asset('svg/simplify/'. $posts->warna_model .'/waveDown.svg') }}">
+        <livewire:simplify.comment-simplify :posts="$posts->id"></livewire:simplify.comment-simplify> --}}
     </div>  
     <img class="wave wavefooter" src="{{ asset('svg/simplify/'. $posts->warna_model .'/waveUp.svg') }}">
     <div class="doa">
@@ -159,8 +170,6 @@
             <p>{{ $posts->slug_nama_pria }} & {{ $posts->slug_nama_wanita }}</p>
         </div>
     </div>
-
-
 @endsection
 @section('script')
 <script>

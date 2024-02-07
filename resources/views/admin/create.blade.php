@@ -25,21 +25,7 @@
             </div>
             @error('title')
                 {{ $message }}
-            @enderror
-            <div>
-                <label for="musik">Lagu</label>
-                <input type="file" name="musik" id="musik" required>
-            </div>
-            @error('musik')
-                {{ $message }}
-            @enderror
-            <div>
-
-            <label for="model">Model</label>
-                <select name="model" id="model">
-                    <option value="simplify">Simplify</option>
-                </select>
-            </div>
+            @enderror            
             <div class="warna-model">
                 <label for="warna_model">Warna Model</label>
                 <select name="warna_model" id="warna_model">
@@ -62,13 +48,6 @@
                 <input type="text" name="slug_nama_pria" id="slug_nama_pria" value="{{ old('slug_nama_pria') }}" required>
             </div>
             @error('slug_nama_pria')
-                {{ $message }}
-            @enderror
-            <div>
-                <label for="instagram_pria">Instagram(*opsional)</label>
-                <input type="text" name="instagram_pria" id="instagram_pria" value="{{ old('instagram_pria') }}" required>
-            </div>
-            @error('instagram_pria')
                 {{ $message }}
             @enderror
             <div>
@@ -98,13 +77,6 @@
                 <input type="text" name="slug_nama_wanita" id="slug_nama_wanita" value="{{ old('slug_nama_wanita') }}" required>
             </div>
             @error('slug_nama_wanita')
-                {{ $message }}
-            @enderror
-            <div>
-                <label for="instagram_wanita">Instagram(*opsional)</label>
-                <input type="text" name="instagram_wanita" id="instagram_wanita" value="{{ old('instagram_wanita') }}" required>
-            </div>
-            @error('instagram_wanita')
                 {{ $message }}
             @enderror
             <div>
@@ -165,155 +137,12 @@
             @error('jam_resepsi')
                 {{ $message }}
             @enderror
-            <div>
-                <label for="iframe">Link Gmaps</label>
-                <textarea name="iframe" id="iframe" required></textarea>
-            </div>
-            <div>
-            </div>
         </div>
-
-        <div class="imageInput grid">
-            <div>
-                <label for="">Link Streaming Ig</label>
-                <input type="text" name="linkIg" placeholder="link Ig Streaming" >
-            </div>
-            <div>
-                <label for="imgCouple">Couple</label>
-                <input type="file" name="imgCouple" id="imgcouple" required>
-            </div>
-            @error('imgCouple')
-                {{ $message }}
-            @enderror
-            <div>
-                <label for="cover">Cover Dekstop</label>
-                <input type="file" name="coverD" id="cover" accept="image/*" required>
-            </div>
-            @error('coverD')
-                {{ $message }}
-            @enderror
-            <div>
-                <label for="coverM">Cover Mobile</label>
-                <input type="file" name="coverM" id="coverM" accept="image/*" required>
-            </div>
-            @error('coverM')
-                {{ $message }}
-            @enderror
-            <div>
-                <label for="landingImageD">image landing Dekstop</label>
-                <input type="file" name="landingImageD" id="landingImageD" accept="image/*" required>
-            </div>
-            @error('landingImageD')
-                {{ $message }}
-            @enderror        
-            <div>
-                <label for="landingImageM">image landing Mobile</label>
-                <input type="file" name="landingImageM" id="landingImageM" accept="image/*" required>
-            </div>
-            @error('landingImageM')
-                {{ $message }}
-            @enderror 
-            <div>
-                <label for="footerImageD">footer image Dekstop</label>
-                <input type="file" name="footerImageD" id="footerImageD" accept="image/*" required>
-            </div>
-            @error('footerImageD')
-                {{ $message }}
-            @enderror 
-            <div>
-                <label for="footerImageM">footer image Mobile</label>
-                <input type="file" name="footerImageM" id="footerImageM" accept="image/*" required>
-            </div>
-            @error('footerImageM')
-                {{ $message }}
-            @enderror  
-            <div>
-                <label for="imgWanita">Gambar pengantin wanita</label>
-                <input type="file" name="imgWanita" id="imgWanita" accept="image/*" required>
-            </div>
-            @error('imgWanita')
-                {{ $message }}
-            @enderror
-            <div>
-                <label for="imgPria">Gambar pengantin pria</label>
-                <input type="file" name="imgPria" id="imgPria" accept="image/*" required>
-            </div>
-            @error('imgPria')
-                {{ $message }}
-            @enderror
-            <div>
-                <label for="slideshow">Slideshow</label>
-                <input type="file" name="slideshow[]" multiple accept="image/*" required>
-            </div>
-            @error('slideshow')
-                {{ $message }}
-            @enderror
-            <div>
-                <label>Story 1</label>
-                <div>
-                    <input type="date" name="story1_date" required>
-                    <input type="file" name="story1_img" accept="image/*" required>
-                </div>
-            </div>
-            @error('story1_img')
-                {{ $message }}
-            @enderror
-            <textarea name="story1_text"></textarea>
-            @error('story1_text')
-                {{ $message }}
-            @enderror
-            <div>
-                <label>Story 2</label>
-                <div>
-                    <input type="date" name="story2_date" required>
-                    <input type="file" name="story2_img" accept="image/*" required>
-                </div>
-            </div>
-            @error('story2_img')
-                {{ $message }}
-            @enderror
-            <textarea name="story2_text"></textarea>
-            @error('story1_text')
-                {{ $message }}
-            @enderror
-            <div>
-                <label>Story 3</label>
-                <div>
-                    <input type="date" name="story3_date" required>
-                    <input type="file" name="story3_img" accept="image/*" required>
-                </div>
-            </div>
-            @error('story3_img')
-                {{ $message }}
-            @enderror
-            <textarea name="story3_text"></textarea>
-            @error('story1_text')
-                {{ $message }}
-            @enderror
-            <div>
-                <label>Donate</label>
-                <select name="bank" required>
-                    <option value="bca">BCA</option>
-                    <option value="dana">DANA</option>
-                    <option value="bni">BNI</option>
-                    <option value="bjb">BJB</option>
-                    <option value="bri">BRI</option>
-                    <option value="bsi">BSI</option>
-                    <option value="dana">DANA</option>
-                </select>
-            </div>
-            <div>
-                <label>Nomor rekening </label>
-                <input type="text" name="norek" placeholder="Nomor Rekening" required>
-            </div>
-            <div>
-                <label>Atas nama</label>
-                <input type="text" name="atasNama" placeholder="Atas Nama" required>
-            </div>
-            <div>
-                <label>Turut mengundang</label>
-                <textarea name="mengundang" required></textarea>
-            </div>
+        <div hidden>
+            <label for="model" hidden>Model</label>
+            <select name="model" id="model" hidden>
+                <option value="simplify">Simplify</option>
+            </select>
         </div>
         <button type="submit" class="mb">Send</button>
     </form>

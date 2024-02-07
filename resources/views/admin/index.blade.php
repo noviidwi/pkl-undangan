@@ -13,10 +13,10 @@
     </div>
     <div class="card">
         <div class="number">
-            {{$comments}}
+            {{$transaksi}}
         </div>
         <div class="labelCard">
-            Komentar
+            Transaksi
         </div>
     </div>
 @endsection
