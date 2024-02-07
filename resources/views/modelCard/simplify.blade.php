@@ -34,39 +34,6 @@
     </div>
 @endsection
 @section('container')
-<audio id="audio" controls>
-        <source src="{{ asset('storage/'.$posts->musik) }}">
-    </audio>
-    <div class="botBar">
-        <a href="#home">
-            <div class="homeIcon">
-                <img src="{{ asset('imageModel/home.png') }}">
-                <div>Home</div>
-            </div>
-        </a>
-        <a href="#couple">
-            <div class="coupleIcon">
-                <img src="{{ asset('imageModel/couple.png') }}">
-                <div>Couple</div> 
-            </div>
-        </a>
-        <a href="#event">
-            <div class="eventIcon">
-                <img src="{{ asset('imageModel/event.png') }}">
-                <div>Event</div>
-            </div>
-        </a>
-        <a href="#wishes">
-            <div class="wishesIcon">    
-                <img src="{{ asset('imageModel/wishesh.png') }}">
-                <div>Wishes</div>
-            </div>
-        </a>
-        <div class="toggleAudioIcon">
-            <img src="{{ asset('svg/simplify/pause.svg') }}">
-            <div>Pause</div>
-        </div>
-    </div>
     <div class="home" id="home">
         <img class="imgRight op" src="{{ asset('imageModel/simplify/'.$posts->warna_model.'/kananAtas.png') }}">
         <div class="content-home">
@@ -74,25 +41,6 @@
                 <img src="{{ asset('imageModel/simplify/'.$posts->warna_model.'/Couple.png') }}" alt="">
                 <p>{{ $posts->slug_nama_pria }} & {{ $posts->slug_nama_wanita }}</p>
                 <p>{{ $tanggal_akad}}</p>
-            </div>
-            <div class="countdown">
-                <div class="box">
-                    <p id="day"></p>
-                    <span>Hari</span>
-                </div>
-                <div class="box">
-                    <p id="hour"></p>
-                    <span>Jam</span>
-                </div>
-                <div class="box">
-                    <p id="minute"></p>
-                    <span>Menit</span>
-                </div>
-                <div class="box">
-                    <p id="second"></p>
-                    <span>Detik</span>
-                </div>
-
             </div>
         </div>
     </div>
@@ -191,19 +139,8 @@
                     <p>Pukul {{ $posts->jam_resepsi }}</p>
                 </div>
             </div>
-            <div class="card-event" data-aos="fade-down" data-aos-once="true">
-                <div class="background">
-                    <div class="icon-header">
-                        <img src="{{ asset('svg/simplify/location.svg') }}">
-                    </div>
-                    <h2>Lokasi Acara</h2>
-                    {!! $posts->iframe !!}
-                </div>
-            </div>
         </div>
         <img class="wave" src="{{ asset('svg/simplify/'. $posts->warna_model .'/waveUp.svg') }}">
-        <img class="wave" src="{{ asset('svg/simplify/'. $posts->warna_model .'/waveDown.svg') }}">
-        <livewire:simplify.comment-simplify :posts="$posts->id"></livewire:simplify.comment-simplify>
     </div>  
     <img class="wave wavefooter" src="{{ asset('svg/simplify/'. $posts->warna_model .'/waveUp.svg') }}">
     <div class="doa">
@@ -222,10 +159,7 @@
             <p>{{ $posts->slug_nama_pria }} & {{ $posts->slug_nama_wanita }}</p>
         </div>
     </div>
-    <div class="promote">
-        <img src="{{ asset('home/logo-promote.svg') }}">
-        <div>diundang</div>
-    </div>
+
 
 @endsection
 @section('script')
