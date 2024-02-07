@@ -21,7 +21,7 @@
 
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="/" class="h1"><b>Andis</b> Dev</a>
+                <a href="/" class="h1">Cerita Bahagianya
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>

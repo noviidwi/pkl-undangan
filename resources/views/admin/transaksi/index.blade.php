@@ -14,15 +14,6 @@
             {{session('success')}}
         </div>
     @endif
-    <div class="show-entries">
-        <label for="entries">Show</label>
-        <select id="entries" name="entries" class="show-entries-select" onchange="this.form.submit()">
-            <option value="10">10</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-        </select>
-        <label>entries</label>
-    </div>
     <table cellspacing="0">
         <thead>
             <tr>
@@ -38,7 +29,7 @@
                     <td>{{ $data->id_transaksi }}</td>
                     <td>{{ $data->id_customer }}</td>
                     <td>{{ $data->tanggal_transaksi }}</td>
-                    <td>{{ $data->jumlah_transaksi }}</td>
+                    <td>Rp {{ $data->jumlah_transaksi }}</td>
                 </tr>
             @endforeach
         </tbody>
