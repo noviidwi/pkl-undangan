@@ -35,6 +35,7 @@
 table {
     width: 90%;
     margin: auto;
+    text-align: center;
 }
 table thead {
     background-color: blue;
@@ -51,12 +52,15 @@ table tbody {
 table tbody tr:nth-child(odd) {
     background-color: whitesmoke;
 }
-table tbody tr th {
-    padding: 8px 0;
+table tbody td, table tbody th { 
+    text-align: center; 
 }
+
 table tbody img {
     width: 18px;
+    margin: auto;
 }
+
 table tbody .action {
     display: flex;
     align-items: center;
