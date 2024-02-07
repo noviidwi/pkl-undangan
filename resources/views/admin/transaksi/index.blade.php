@@ -29,7 +29,7 @@
                     <td>{{ $data->id_transaksi }}</td>
                     <td>{{ $data->id_customer }}</td>
                     <td>{{ $data->tanggal_transaksi }}</td>
-                    <td>{{ $data->formatRupiah('jumlah_transaksi') }}</td>
+                    <td>Rp {{ $data->formatRupiah('jumlah_transaksi') }}</td>
                 </tr>
             @endforeach
         </tbody>
