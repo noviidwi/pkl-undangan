@@ -14,6 +14,15 @@
             {{session('success')}}
         </div>
     @endif
+    <div class="show-entries">
+        <label for="entries">Show</label>
+        <select id="entries" name="entries" class="show-entries-select" onchange="this.form.submit()">
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <label>entries</label>
+    </div>  
     <table cellspacing="0">
         <thead>
             <tr>
