@@ -22,7 +22,7 @@
             <option value="100">100</option>
         </select>
         <label>entries</label>
-    </div>  
+    </div>
     <table cellspacing="0">
         <thead>
             <tr>
