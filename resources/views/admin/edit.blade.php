@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{ asset('css/dashboard/create.css') }}">
 @endsection
 @section('mainbar')
-<form action="/dashboard//{{$posts->slug}}/edit" method="post" id="post">
+<form action="/dashboard/{{$posts->slug}}/edit" method="post" id="post">
         @method('patch')
         @csrf
         <div class="mainInput grid">

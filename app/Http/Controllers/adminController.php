@@ -85,6 +85,20 @@ class adminController extends Controller
         return redirect('/dashboard/manage');
     }
 
+    public function updateTransaksiStore($id_transaksi, Request $request)
+    {
+        $validation = $request->validate([
+            'id_transaksi' => 'required',
+            'id_customer' => 'required',
+            'jumlah_transaksi' => 'required',
+            'tanggal_transaksi' => 'required',
+        ]);
+
+        Transaksi::where('id_transaksi', $id_transaksi)->update($validation);
+
+        return redirect('/dashboard/transaksi');
+    }
+
     public function destroy($slug)
     {
         $model = Post::where('slug', $slug)->firstOrFail();

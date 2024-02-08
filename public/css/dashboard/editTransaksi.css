@@ -27,31 +27,31 @@ form .grid > div:nth-child(odd) {
     background-color: whitesmoke;
 }
 
-form .grid>textarea {
+form input, form textarea {
     padding: 5px;
-    font-family: rubik;
     box-sizing: border-box;
     width: 80%;
-    display: block;
-    height: 50px;
     margin: auto;
-}   
-form input {
-    padding: 5px;
-    box-sizing: border-box;
 }
-form h3 {
 
+form h3 {
     margin: 10px 0;
     font-family: rubik;
     text-align: center;
 }
-form button {
+
+form .button-container {
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+form .button-container button {
     width: 80%;
     cursor: pointer;
     background-color: greenyellow;
     padding: 4px 0;
-    margin:20px  auto;
     outline: none;
     border: none;
+    display: inline-block;
 }
