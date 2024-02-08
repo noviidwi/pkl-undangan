@@ -26,7 +26,7 @@ class postController extends Controller
         $resepsi = Carbon::createFromFormat('Y-m-d', $posts->tanggal_resepsi);
         $formattedResepsi = $resepsi->translatedFormat('l, j F Y');
 
-        return view('modelCard/'.$posts->model, [
+        return view('modelCard.simplify', [
             'posts' => $posts,
             'tanggal_akad' => $formattedAkad,
             'tanggal_resepsi' => $formattedResepsi,
