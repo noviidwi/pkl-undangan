@@ -40,15 +40,6 @@
             @error('jumlah_transaksi')
                 {{ $message }}
             @enderror            
-            <h3>Resepsi</h3>
-            <div>
-                <label for="tempat_resepsi">Tempat</label>
-                <input type="text" name="tempat_resepsi" id="tempat_resepsi" value="{{ old('tempat_resepsi') }}" required>
-            </div>
-            @error('tempat_resepsi')
-                {{ $message }}
-            @enderror
-        
         </div>
         <button type="submit" class="mb">Send</button>
     </form>
