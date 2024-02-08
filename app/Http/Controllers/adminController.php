@@ -16,7 +16,7 @@ class adminController extends Controller
     {
         return view('admin.index', [
             'posts' => Post::all()->count(),
-            'comments' => Comment::all()->count(),
+            'transaksi' => Transaksi::all()->count(),
         ]);
     }
 
@@ -97,44 +97,6 @@ class adminController extends Controller
         $commonRules = $request->rules();
 
         $validatedData = $request->validate($commonRules);
-
-        $validatedData['musik'] = $request->file('musik')->store('mp3');
-
-        if($request->has('slideshow')) {
-            $slds = $request->file('slideshow');
-            $data = [];
-
-            foreach ($slds as $imej) {
-                $result = $imej->store('imageWedding');
-                array_push($data, $result);
-            }
-
-            $validatedData['imgCouple'] = $request->file('imgCouple')->store('imageWedding');
-            $validatedData['coverD'] = $request->file('coverD')->store('imageWedding');
-            $validatedData['coverM'] = $request->file('coverM')->store('imageWedding');
-            $validatedData['landingImageD'] = $request->file('landingImageD')->store('imageWedding');
-            $validatedData['landingImageM'] = $request->file('landingImageM')->store('imageWedding');
-            $validatedData['footerImageD'] = $request->file('footerImageD')->store('imageWedding');
-            $validatedData['footerImageM'] = $request->file('footerImageM')->store('imageWedding');
-            $validatedData['imgWanita'] = $request->file('imgWanita')->store('imageWedding');
-            $validatedData['imgPria'] = $request->file('imgPria')->store('imageWedding');
-            $validatedData['slideshow'] = json_encode($data);
-            $validatedData['story1_date'] = $request->story1_date;
-            $validatedData['story1_img'] = $request->file('story1_img')->store('imageStory');
-            $validatedData['story1_text'] = $request->story1_text;
-            $validatedData['story2_date'] = $request->story2_date;
-            $validatedData['story2_img'] = $request->file('story2_img')->store('imageStory');
-            $validatedData['story2_text'] = $request->story2_text;
-            $validatedData['story3_date'] = $request->story3_date;
-            $validatedData['story3_img'] = $request->file('story3_img')->store('imageStory');
-            $validatedData['story3_text'] = $request->story3_text;
-            $validatedData['bank'] = $request->bank;
-            $validatedData['norek'] = $request->norek;
-            $validatedData['atasNama'] = $request->atasNama;
-            $mengundang = $request->mengundang;
-            $parse = explode('/', $mengundang);
-            $validatedData['mengundang'] = json_encode($parse);
-        }
 
         Post::create($validatedData);
 

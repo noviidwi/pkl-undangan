@@ -158,10 +158,6 @@
                 {{ $message }}
             @enderror
             <div>
-                <label for="iframe">Link Gmaps</label>
-                <textarea name="iframe" id="iframe">{{$posts->iframe}}</textarea>
-            </div>
-            <div>
             </div>
         </div>
         <button type="submit" class="mb">Send</button>

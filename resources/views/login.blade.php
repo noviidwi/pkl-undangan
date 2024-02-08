@@ -21,10 +21,9 @@
 
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="/" class="h1">Cerita Bahagianya
+                <h3>Cerita Bahagianya</h3>
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
                 <form class="needs-validation" novalidate action="/area51" method="POST">
                     @csrf
                     <div class="input-group mb-3">
