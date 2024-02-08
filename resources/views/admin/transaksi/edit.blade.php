@@ -31,10 +31,10 @@
                 <div class="error">{{ $message }}</div>
             @enderror
             <div>
-                <label for="total_transaksi">Total Transaksi</label>
-                <input type="number" name="total_transaksi" id="total_transaksi" value="{{ old('total_transaksi', $transaksi->total_transaksi) }}" required>
+                <label for="jumlah_transaksi">Jumlah Transaksi</label>
+                <input type="number" name="jumlah_transaksi" id="jumlah_transaksi" value="{{ old('jumlah_transaksi', $transaksi->jumlah_transaksi) }}" required>
             </div>
-            @error('total_transaksi')
+            @error('jumlah_transaksi')
                 <div class="error">{{ $message }}</div>
             @enderror
         </div>
