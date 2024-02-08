@@ -28,7 +28,7 @@ class adminController extends Controller
     public function manage()
     {
         return view('admin.manage', [
-            'posts' => Post::select('id', 'slug', 'warna_model', 'model')->latest()->filter()->get(),
+            'posts' => Post::select('id', 'slug', 'warna_model')->latest()->filter()->get(),
         ]);
     }
 
@@ -36,13 +36,6 @@ class adminController extends Controller
     {
         return view('admin.transaksi.index', [
             'transaksi' => Transaksi::select('id_customer', 'id_transaksi', 'nama_customer', 'jumlah_transaksi','tanggal_transaksi')->get(),
-        ]);
-    }
-
-    public function transaksiUpdate()
-    {
-        return view('admin.transaksi.edit', [
-            'transaksi' => Transaksi::select('id_customer', 'id_transaksi', 'jumlah_transaksi','tanggal_transaksi')->get(),
         ]);
     }
 
@@ -58,9 +51,7 @@ class adminController extends Controller
         $validation = $request->validate([
             'slug' => 'required',
             'title' => 'required',
-            'iframe' => 'required',
             'warna_model' => 'required',
-            'model' => 'required',
             'nama_pria' => 'required',
             'slug_nama_pria' => 'required',
             'instagram_pria' => 'nullable',
@@ -84,20 +75,20 @@ class adminController extends Controller
         return redirect('/dashboard/manage');
     }
 
-    public function destroy($slug)
-    {
-        $model = Post::where('slug', $slug)->firstOrFail();
+    // public function destroy($slug)
+    // {
+    //     $model = Post::where('slug', $slug)->firstOrFail();
 
-        if ($model->slideshow) {
-            Storage::delete($model->musik);
-            Storage::delete(json_decode($model->slideshow));
-            Storage::delete([$model->story1_img, $model->story2_img, $model->story3_img, $model->imgCouple, $model->coverD, $model->coverM, $model->imgWanita, $model->imgPria , $model->landingImageD , $model->landingImageM , $model->footerImageD , $model->footerImageM ]);
-        }
+    //     if ($model->slideshow) {
+    //         Storage::delete($model->musik);
+    //         Storage::delete(json_decode($model->slideshow));
+    //         Storage::delete([$model->story1_img, $model->story2_img, $model->story3_img, $model->imgCouple, $model->coverD, $model->coverM, $model->imgWanita, $model->imgPria , $model->landingImageD , $model->landingImageM , $model->footerImageD , $model->footerImageM ]);
+    //     }
 
-        Post::destroy($model->id);
+    //     Post::destroy($model->id);
 
-        return redirect()->back()->with('success', 'Data berhasil dihapus.');
-    }
+    //     return redirect()->back()->with('success', 'Data berhasil dihapus.');
+    // }
 
     public function store(validationStoreAdmin $request)
     {
