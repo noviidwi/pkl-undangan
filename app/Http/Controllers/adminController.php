@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\validationStoreAdmin;
+use App\Http\Requests\validationStoreTransaksi;
 use App\Models\Comment;
 use App\Models\Post;
 use App\Models\Transaksi;
@@ -100,6 +101,17 @@ class adminController extends Controller
         $validatedData = $request->validate($commonRules);
 
         Post::create($validatedData);
+
+        return redirect()->back()->with('success', 'Data berhasil di tambahkan');
+    }
+
+    public function storeTransaksi(validationStoreTransaksi $request)
+    {
+        $commonRules = $request->rules();
+
+        $validatedData = $request->validate($commonRules);
+
+        Transaksi::create($validatedData);
 
         return redirect()->back()->with('success', 'Data berhasil di tambahkan');
     }
