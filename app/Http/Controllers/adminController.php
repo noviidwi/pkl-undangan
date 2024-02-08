@@ -38,6 +38,10 @@ class adminController extends Controller
             'transaksi' => Transaksi::select('id_customer', 'id_transaksi', 'nama_customer', 'jumlah_transaksi','tanggal_transaksi')->get(),
         ]);
     }
+    public function transaksiCreate()
+    {
+        return view('admin.transaksi.create');
+    }
 
     public function updateCreate($slug)
     {

@@ -21,6 +21,7 @@
                 <th>ID Customer</th>
                 <th>Tanggal Transaksi</th>
                 <th>Total Transaksi</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>

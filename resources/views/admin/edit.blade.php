@@ -1,28 +1,25 @@
 @extends('layouts.dashboard')
-
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/dashboard/create.css') }}">
 @endsection
-
 @section('mainbar')
-    <form action="/dashboard/transaksi/{{ $transaksi->id }}/update" method="post">
+<form action="/dashboard//{{$posts->slug}}/edit" method="post" id="post">
         @method('patch')
         @csrf
         <div class="mainInput grid">
             <div>
-                <label for="id_transaksi">ID Transaksi</label>
-                <input type="text" name="id_transaksi" id="id_transaksi" value="{{ old('id_transaksi', $transaksi->id_transaksi) }}" readonly>
+                <label for="slug">Slug</label>
+                <input type="text" name="slug" id="slug" value="{{ old('slug',$posts->slug) }}">
             </div>
-            @error('id_transaksi')
-                <div class="error">{{ $message }}</div>
+            @error('slug')
+                {{ $message }}
             @enderror
-
             <div>
-                <label for="id_customer">ID Customer</label>
-                <input type="text" name="id_customer" id="id_customer" value="{{ old('id_customer', $transaksi->id_customer) }}" required>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" value="{{ old('title',$posts->title) }}">
             </div>
-            @error('id_customer')
-                <div class="error">{{ $message }}</div>
+            @error('title')
+                {{ $message }}
             @enderror
             <div class="warna-model">
                 <label for="warna_model">Warna Model</label>
@@ -42,15 +39,11 @@
             @error('nama_pria')
                 {{ $message }}
             @enderror
-
             <div>
-                <label for="total_transaksi">Total Transaksi</label>
-                <input type="number" name="total_transaksi" id="total_transaksi" value="{{ old('total_transaksi', $transaksi->total_transaksi) }}" required>
+                <label for="slug_nama_pria">Nama sebutan</label>
+                <input type="text" name="slug_nama_pria" id="slug_nama_pria" value="{{ old('slug_nama_pria',$posts->slug_nama_pria) }}">
             </div>
             @error('slug_nama_pria')
-                {{ $message }}
-            @enderror
-            @error('instagram_pria')
                 {{ $message }}
             @enderror
             <div>
@@ -140,8 +133,9 @@
             @error('jam_resepsi')
                 {{ $message }}
             @enderror
+            <div>
+            </div>
         </div>
-
-        <button type="submit" class="mb">Update</button>
+        <button type="submit" class="mb">Send</button>
     </form>
 @endsection
