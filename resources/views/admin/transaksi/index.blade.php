@@ -30,6 +30,14 @@
                     <td>{{ $data->id_customer }}</td>
                     <td>{{ $data->tanggal_transaksi }}</td>
                     <td>{{ $data->formatRupiah('jumlah_transaksi') }}</td>
+                    <td class="action">
+                        <a href="/dashboard/transaksi/{{$data->id_transaksi}}/edit" class="edit"><img src="{{asset('svg/other/edit.svg')}}"></a>
+                        <form action="/dashboard/transaksi/{{$data->id_transaksi}}" method="POST">
+                            @method('delete')
+                            @csrf
+                            <button onclick="return confirm('Delete?')"><img src="{{asset('svg/other/delete.svg')}}"></button>
+                        </form>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

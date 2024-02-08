@@ -35,7 +35,7 @@
                         <form action="/dashboard/manage/{{$post->slug}}" method="POST">
                             @method('delete')
                             @csrf
-                            <button onclick="return confirm('Yakin dek?')"><img src="{{asset('svg/other/delete.svg')}}"></button>
+                            <button onclick="return confirm('Delete?')"><img src="{{asset('svg/other/delete.svg')}}"></button>
                         </form>
                     </th>
                 </tr>
