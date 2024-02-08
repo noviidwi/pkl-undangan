@@ -38,6 +38,8 @@
                 <div class="error">{{ $message }}</div>
             @enderror
         </div>
-        <button type="submit" class="mb">Update</button>
+        <div class=button-container>
+            <button type="submit" class="mb">Update</button>
+        </div>
     </form>
 @endsection
