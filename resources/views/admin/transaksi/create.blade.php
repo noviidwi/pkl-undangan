@@ -9,7 +9,7 @@
             {{session('success')}}
         </div>
     @endif
-<form action="/dashboard/create" method="post" enctype="multipart/form-data" id="post">
+<form action="/dashboard/transaksi/create" method="post" enctype="multipart/form-data" id="post">
         @csrf
         <div class="mainInput grid">
             <div>
