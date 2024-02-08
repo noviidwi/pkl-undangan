@@ -22,15 +22,6 @@
             @error('title')
                 {{ $message }}
             @enderror
-            <div>
-                <label for="model">Model</label>
-                <select name="model" id="model">
-                    <option value="{{$posts->model}}" selected>{{$posts->model}}</option>
-                    <option value="javva">Javva</option>
-                    <option value="simplify">Simplify</option>
-                    <option value="luxus">Luxus</option>
-                </select>
-            </div>
             <div class="warna-model">
                 <label for="warna_model">Warna Model</label>
                 <select name="warna_model" id="warna_model">
@@ -56,10 +47,6 @@
             @error('slug_nama_pria')
                 {{ $message }}
             @enderror
-            <div>
-                <label for="instagram_pria">Instagram(*opsional)</label>
-                <input type="text" name="instagram_pria" id="instagram_pria" value="{{ old('instagram_pria', $posts->instagram_pria) }}">
-            </div>
             @error('instagram_pria')
                 {{ $message }}
             @enderror
@@ -90,13 +77,6 @@
                 <input type="text" name="slug_nama_wanita" id="slug_nama_wanita" value="{{ old('slug_nama_wanita',$posts->slug_nama_wanita) }}">
             </div>
             @error('slug_nama_wanita')
-                {{ $message }}
-            @enderror
-            <div>
-                <label for="instagram_wanita">Instagram(*opsional)</label>
-                <input type="text" name="instagram_wanita" id="instagram_wanita" value="{{ old('instagram_wanita' , $posts->instagram_wanita) }}">
-            </div>
-            @error('instagram_wanita')
                 {{ $message }}
             @enderror
             <div>

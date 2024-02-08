@@ -3,9 +3,6 @@
     <link rel="stylesheet" href="{{asset('css/dashboard/manage.css')}}">
 @endsection
 @section('mainbar')
-    <div class="add">
-        <button class="btn-success"><a href="/dashboard/transaksi/create">Tambah Transaksi</a></button>
-    </div>
     <div class="search">
         <form action="/dashboard/manage" method="GET">
             <input type="text" name="search" placeholder="Masukkan Nomor Transaksi">
@@ -35,8 +32,8 @@
                     <td>{{ $data->tanggal_transaksi }}</td>
                     <td>{{ $data->formatRupiah('jumlah_transaksi') }}</td>
                     <td class="action">
-                        <a href="/dashboard/manage/{{$data->id_transaksi}}/edit" class="edit"><img src="{{asset('svg/other/edit.svg')}}"></a>
-                        <form action="/dashboard/manage/{{$data->id_transaksi}}" method="POST">
+                        <a href="/dashboard/transaksi/{{$data->id_transaksi}}/edit" class="edit"><img src="{{asset('svg/other/edit.svg')}}"></a>
+                        <form action="/dashboard/transaksi/{{$data->id_transaksi}}" method="POST">
                             @method('delete')
                             @csrf
                             <button onclick="return confirm('Delete?')"><img src="{{asset('svg/other/delete.svg')}}"></button>
