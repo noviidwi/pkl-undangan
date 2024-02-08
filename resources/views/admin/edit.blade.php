@@ -105,7 +105,7 @@
                 {{ $message }}
             @enderror
             <div>
-                <label for="jam_akad">waktu</label>
+                <label for="jam_akad">Waktu</label>
                 <input type="text" name="jam_akad" id="jam_akad" value="{{ old('jam_akad', $posts->jam_akad) }}">
             </div>
             @error('jam_akad')
@@ -127,7 +127,7 @@
                 {{ $message }}
             @enderror
             <div>
-                <label for="jam_resepsi">waktu</label>
+                <label for="jam_resepsi">Waktu</label>
                 <input type="text" name="jam_resepsi" id="jam_resepsi" value="{{ old('jam_resepsi' , $posts->jam_resepsi) }}">
             </div>
             @error('jam_resepsi')

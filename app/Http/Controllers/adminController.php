@@ -50,10 +50,10 @@ class adminController extends Controller
         ]);
     }
 
-    public function updateTransaksi($slug)
+    public function updateTransaksi($id_transaksi)
     {
-        return view('admin.edit', [
-            'posts' => Post::where('slug', $slug)->firstOrFail(),
+        return view('admin.transaksi.edit', [
+            'transaksi' => Transaksi::where('id_transaksi', $id_transaksi)->firstOrFail(),
         ]);
     }
 

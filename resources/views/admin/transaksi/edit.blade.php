@@ -16,7 +16,6 @@
             @error('id_transaksi')
                 <div class="error">{{ $message }}</div>
             @enderror
-
             <div>
                 <label for="id_customer">ID Customer</label>
                 <input type="text" name="id_customer" id="id_customer" value="{{ old('id_customer', $transaksi->id_customer) }}" required>
@@ -24,7 +23,6 @@
             @error('id_customer')
                 <div class="error">{{ $message }}</div>
             @enderror
-
             <div>
                 <label for="tanggal_transaksi">Tanggal Transaksi</label>
                 <input type="date" name="tanggal_transaksi" id="tanggal_transaksi" value="{{ old('tanggal_transaksi', $transaksi->tanggal_transaksi) }}" required>
@@ -32,7 +30,6 @@
             @error('tanggal_transaksi')
                 <div class="error">{{ $message }}</div>
             @enderror
-
             <div>
                 <label for="total_transaksi">Total Transaksi</label>
                 <input type="number" name="total_transaksi" id="total_transaksi" value="{{ old('total_transaksi', $transaksi->total_transaksi) }}" required>
@@ -41,7 +38,6 @@
                 <div class="error">{{ $message }}</div>
             @enderror
         </div>
-
         <button type="submit" class="mb">Update</button>
     </form>
 @endsection

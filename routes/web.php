@@ -19,6 +19,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard/transaksi/create', [adminController::class, 'transaksiCreate']);
     Route::delete('/dashboard/manage/{slug}', [adminController::class, 'destroy']);
     Route::get('dashboard/manage/{slug}/edit', [adminController::class, 'updateCreate']);
+    Route::get('dashboard/transaksi/{id_transaksi}/edit', [adminController::class, 'updateTransaksi']);
     Route::patch('dashboard/manage/{slug}/edit', [adminController::class, 'updateStore']);
     Route::post('/logout', [authenticationController::class, 'logout']);
 });
