@@ -1,11 +1,11 @@
 @extends('layouts.dashboard')
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('css/dashboard/create.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/dashboard/editTransaksi.css') }}">
 @endsection
 
 @section('mainbar')
-    <form action="/dashboard/transaksi/{{ $transaksi->id }}/update" method="post">
+    <form action="/dashboard/transaksi/{{ $transaksi->id }}/edit" method="post">
         @method('patch')
         @csrf
         <div class="mainInput grid">
