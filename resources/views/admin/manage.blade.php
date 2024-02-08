@@ -28,7 +28,7 @@
                 <tr>
                     <th>{{$post->id}}</th>
                     <th>{{$post->slug}}</th>
-                    <th>{{$post->model}} | {{$post->warna_model}}</th>
+                    <th> Simplify | {{$post->warna_model}}</th>
                     <th class="action">
                         <a href="/{{$post->slug}}" class="view" target="_blank"><img src="{{asset('svg/other/view.svg')}}"></a>
                         <a href="/dashboard/manage/{{$post->slug}}/edit" class="edit"><img src="{{asset('svg/other/edit.svg')}}"></a>
