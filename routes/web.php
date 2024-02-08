@@ -21,6 +21,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/dashboard/manage/{slug}', [adminController::class, 'destroy']);
     Route::get('dashboard/manage/{slug}/edit', [adminController::class, 'updateCreate']);
     Route::get('dashboard/transaksi/{id_transaksi}/edit', [adminController::class, 'updateTransaksi']);
+    Route::patch('dashboard/transaksi/{id_transaksi}/edit', [adminController::class, 'updateTransaksiStore']);
     Route::patch('dashboard/manage/{slug}/edit', [adminController::class, 'updateStore']);
     Route::post('/logout', [authenticationController::class, 'logout']);
 });
