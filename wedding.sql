@@ -206,7 +206,7 @@ INSERT INTO `posts` (`id`, `slug`, `title`, `imgCouple`, `coverD`, `coverM`, `la
 
 CREATE TABLE `transaksi` (
   `id_customer` int(11) DEFAULT NULL,
-  `id_transaksi` int(11) NOT NULL,
+  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `nama_customer` varchar(255) DEFAULT NULL,
   `jumlah_transaksi` int(11) DEFAULT NULL,
   `tanggal_transaksi` date DEFAULT NULL
@@ -216,7 +216,7 @@ CREATE TABLE `transaksi` (
 -- Dumping data for table `transaksi`
 --
 
-INSERT INTO `transaksi` (`id_customer`, `id_transaksi`, `nama_customer`, `jumlah_transaksi`, `tanggal_transaksi`) VALUES
+INSERT INTO `transaksi` (`id_customer`, `id`, `nama_customer`, `jumlah_transaksi`, `tanggal_transaksi`) VALUES
 (1, 1001, 'John Doe', 500, '2024-02-06'),
 (2, 1002, 'Jane Smith', 750, '2024-02-06'),
 (3, 1003, 'Michael Brown', 300, '2024-02-05'),
@@ -294,7 +294,7 @@ ALTER TABLE `posts`
 -- Indexes for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  ADD PRIMARY KEY (`id_transaksi`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`

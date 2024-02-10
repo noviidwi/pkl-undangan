@@ -79,6 +79,9 @@ table tbody .action a {
 table tbody .view {
     background-color: yellow;
 }
+table tbody .cetak {
+    background-color: yellow;
+}
 table tbody .edit {
     background-color: green;
 }

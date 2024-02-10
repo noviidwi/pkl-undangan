@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .container {
     position: relative;
     display: flex;
@@ -30,6 +31,7 @@ container .sidebar .header {
     border-bottom: 1px solid white;
     padding-bottom: 10px;
 }
+
 .container .sidebar .header img {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -82,7 +84,7 @@ container .sidebar .header {
     font-family: popin ;
     transition: .3s;
 }
-.container .sidebar a:hover {
+.container .sidebar .flexBeetween a:hover {
     background-color: #65c4d3;
 }
 .container .sidebar a img {

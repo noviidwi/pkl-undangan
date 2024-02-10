@@ -29,20 +29,19 @@
         <tbody>
             @foreach ($transaksi as $data)
                 <tr>
-                    <td>{{ $data->id_transaksi }}</td>
+                    <td>{{ $data->id }}</td>
                     <td>{{ $data->id_customer }}</td>
                     <td>{{ $data->tanggal_transaksi }}</td>
                     <td>{{ $data->formatRupiah('jumlah_transaksi') }}</td>
                     <td class="action">
-                        <a href="/dashboard/transaksi/{{ $data->id_transaksi }}/edit" class="edit"><img src="{{ asset('svg/other/edit.svg') }}"></a>
-                        <form action="{{ route('destroyTransaksi', $data->id_transaksi) }}" method="POST">
+                        <a href="/dashboard/transaksi/{{ $data->id }}/edit" class="edit"><img src="{{ asset('svg/other/edit.svg') }}"></a>
+                        <form action="/dashboard/transaksi/{{$data->id}}" method="POST">
+                            @method('delete')
                             @csrf
-                            @method('DELETE')
                             <button type="submit" onclick="return confirm('Apakah Anda yakin ingin menghapus transaksi ini?')">
                                 <img src="{{ asset('svg/other/delete.svg') }}">
                             </button>
                         </form>
-                        
                     </td>
                 </tr>
             @endforeach

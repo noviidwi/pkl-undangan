@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\validationStoreAdmin;
 use App\Http\Requests\validationStoreTransaksi;
-use App\Models\Comment;
+use Barryvdh\DomPDF\Facade\Pdf;
+use Carbon\Carbon;
 use App\Models\Post;
 use App\Models\Transaksi;
 use Illuminate\Http\Request;
@@ -36,7 +37,7 @@ class adminController extends Controller
     public function transaksiIndex()
     {
         return view('admin.transaksi.index', [
-            'transaksi' => Transaksi::select('id_customer', 'id_transaksi', 'nama_customer', 'jumlah_transaksi','tanggal_transaksi')->get(),
+            'transaksi' => Transaksi::select('id_customer', 'id', 'nama_customer', 'jumlah_transaksi','tanggal_transaksi')->get(),
         ]);
     }
     public function transaksiCreate()
@@ -51,10 +52,10 @@ class adminController extends Controller
         ]);
     }
 
-    public function updateTransaksi($id_transaksi)
+    public function updateTransaksi($id)
     {
         return view('admin.transaksi.edit', [
-            'transaksi' => Transaksi::where('id_transaksi', $id_transaksi)->firstOrFail(),
+            'transaksi' => Transaksi::where('id', $id)->firstOrFail(),
         ]);
     }
 
@@ -85,16 +86,16 @@ class adminController extends Controller
         return redirect('/dashboard/manage');
     }
 
-    public function updateTransaksiStore($id_transaksi, Request $request)
+    public function updateTransaksiStore($id, Request $request)
     {
         $validation = $request->validate([
-            'id_transaksi' => 'required',
+            'id' => 'required',
             'id_customer' => 'required',
             'jumlah_transaksi' => 'required',
             'tanggal_transaksi' => 'required',
         ]);
 
-        Transaksi::where('id_transaksi', $id_transaksi)->update($validation);
+        Transaksi::where('id', $id)->update($validation);
 
         return redirect('/dashboard/transaksi');
     }
@@ -104,6 +105,15 @@ class adminController extends Controller
         $model = Post::where('slug', $slug)->firstOrFail();
 
         Post::destroy($model->id);
+
+        return redirect()->back()->with('success', 'Data berhasil dihapus.');
+    }
+
+    public function destroyTransaksi($id)
+    {
+        $transaksi = Transaksi::where('id', $id)->firstOrFail();
+
+        Transaksi::destroy($transaksi->id);
 
         return redirect()->back()->with('success', 'Data berhasil dihapus.');
     }
@@ -139,5 +149,30 @@ class adminController extends Controller
         $request->session()->regenerateToken();
 
         return redirect('/');
+    }
+
+
+    public function createPDF($post) {
+        $posts = Post::where('slug', $post)->first();
+
+        // if ($posts === null) {
+        //     return abort(404);
+        // }
+
+        // $akad = Carbon::createFromFormat('Y-m-d', $posts->tanggal_akad);
+        // $formattedAkad = $akad->translatedFormat('l, j F Y');
+        // $resepsi = Carbon::createFromFormat('Y-m-d', $posts->tanggal_resepsi);
+        // $formattedResepsi = $resepsi->translatedFormat('l, j F Y');
+
+        // $pdf = PDF::loadView('modelCard.simplify', [
+        //     'posts' => $posts,
+        //     'tanggal_akad' => $formattedAkad,
+        //     'tanggal_resepsi' => $formattedResepsi,
+        // ])->setPaper('a4', 'landscape');
+
+        $pdf = PDF::loadView('coba')->setPaper('a4','landscape');            
+        
+        return $pdf->stream('pdf_file.pdf');
+
     }
 }

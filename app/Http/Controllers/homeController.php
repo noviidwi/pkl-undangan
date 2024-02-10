@@ -15,4 +15,10 @@ class homeController extends Controller
         ]);
         
     }
+    public function coba($slug)
+    {
+        $model = Post::where('slug', $slug)->firstOrFail();
+        return view('printUndangan.simplify',['model'=>$model]);
+        
+    }
 }

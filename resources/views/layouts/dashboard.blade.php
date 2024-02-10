@@ -15,12 +15,14 @@
     <div class="container">
         <div class="sidebar">
             <div class="header">
-                <div class="logo-container">
-                    <img src="{{asset('favicon/logo.png')}}" alt="Logo">
-                    <div class="logo-text">
-                        <span>Cerita Bahagianya</span>
+                <a href="/dashboard">
+                    <div class="logo-container">
+                        <img src="{{asset('favicon/logo.png')}}" alt="Logo">
+                        <div class="logo-text">
+                            <span>Cerita Bahagianya</span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="flexBeetween">
                 <div class="flexMenu">

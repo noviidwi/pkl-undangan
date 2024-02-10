@@ -10,10 +10,10 @@
         @csrf
         <div class="mainInput grid">
             <div>
-                <label for="id_transaksi">ID Transaksi</label>
-                <input type="text" name="id_transaksi" id="id_transaksi" value="{{ old('id_transaksi', $transaksi->id_transaksi) }}" readonly>
+                <label for="id">ID Transaksi</label>
+                <input type="text" name="id" id="id" value="{{ old('id', $transaksi->id) }}" readonly>
             </div>
-            @error('id_transaksi')
+            @error('id')
                 <div class="error">{{ $message }}</div>
             @enderror
             <div>

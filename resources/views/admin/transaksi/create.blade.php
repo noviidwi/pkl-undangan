@@ -13,8 +13,8 @@
         @csrf
         <div class="mainInput grid">
             <div>
-                <label for="id_transaksi">Id Transaksi</label>
-                <input type="text" name="id_transaksi" id="id_transaksi" value="{{ old('id_transaksi') }}" required>
+                <label for="id">Id Transaksi</label>
+                <input type="text" name="id" id="id" value="{{ old('id') }}" required>
             </div>
             @error('slug')
                 {{ $message }}

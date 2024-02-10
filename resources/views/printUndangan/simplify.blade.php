@@ -7,15 +7,6 @@
     <link rel="stylesheet" href="{{ asset('css/card/simplify/'.$posts->warna_model)}}.css">
     <link rel="stylesheet" href="{{asset('css/card/size.css')}}">
 @endsection
-@section('title')
-    {{$posts->title ?? "i-wedding | buat undangan digital pernikahanmu"}}
-@endsection
-@push('style')
-    @livewireStyles
-@endpush
-@push('script')
-    @livewireScripts
-@endpush
 @section('cover')
     <img src="{{ asset('imageModel/simplify/'.$posts->warna_model.'/kananAtas.png') }}">
     <div class="imgCouple">
@@ -170,13 +161,6 @@
             <p>{{ $posts->slug_nama_pria }} & {{ $posts->slug_nama_wanita }}</p>
         </div>
     </div>
-@endsection
-@section('script')
-<script>
-    var countDownDate = new Date("{{ $posts->tanggal_akad }}").getTime();
-</script>
-<script src="{{asset('aos-master/dist/aos.js')}}"></script>
-<script src="{{ asset('js/simplify/main.js') }}"></script>
 @endsection
 
 

@@ -37,6 +37,7 @@
                             @csrf
                             <button onclick="return confirm('Delete?')"><img src="{{asset('svg/other/delete.svg')}}"></button>
                         </form>
+                        <a href="/cetak-pdf/{{$post->slug}}" class="cetak" target="_blank"><img src="{{asset('svg/other/cetak2.svg')}}"></a>
                     </th>
                 </tr>
             @endforeach

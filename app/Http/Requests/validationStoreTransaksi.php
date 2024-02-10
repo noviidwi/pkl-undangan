@@ -24,7 +24,7 @@ class validationStoreTransaksi extends FormRequest
     public function rules()
     {
         $commonRules = [
-            'id_transaksi' => 'required',
+            'id' => 'required',
             'id_customer' => 'required',
             'jumlah_transaksi' => 'required',
             'tanggal_transaksi' => 'required',
