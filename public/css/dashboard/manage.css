@@ -51,6 +51,9 @@ table thead th {
 table tbody {
     font-family: popin;
 }
+table tbody td{ 
+    padding: 10px 0;
+}
 table tbody tr:nth-child(odd) {
     background-color: whitesmoke;
 }
@@ -97,8 +100,7 @@ table tbody button {
     align-items: center;
     border: none;
     border-radius: 5px;
-    padding: 8px;
+    padding: 4px;
     outline: none;
     background-color: red;
 }
-
