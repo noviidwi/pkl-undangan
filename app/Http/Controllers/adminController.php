@@ -155,22 +155,20 @@ class adminController extends Controller
     public function createPDF($post) {
         $posts = Post::where('slug', $post)->first();
 
-        // if ($posts === null) {
-        //     return abort(404);
-        // }
+        if ($posts === null) {
+            return abort(404);
+        }
 
-        // $akad = Carbon::createFromFormat('Y-m-d', $posts->tanggal_akad);
-        // $formattedAkad = $akad->translatedFormat('l, j F Y');
-        // $resepsi = Carbon::createFromFormat('Y-m-d', $posts->tanggal_resepsi);
-        // $formattedResepsi = $resepsi->translatedFormat('l, j F Y');
+        $akad = Carbon::createFromFormat('Y-m-d', $posts->tanggal_akad);
+        $formattedAkad = $akad->translatedFormat('l, j F Y');
+        $resepsi = Carbon::createFromFormat('Y-m-d', $posts->tanggal_resepsi);
+        $formattedResepsi = $resepsi->translatedFormat('l, j F Y');
 
-        // $pdf = PDF::loadView('modelCard.simplify', [
-        //     'posts' => $posts,
-        //     'tanggal_akad' => $formattedAkad,
-        //     'tanggal_resepsi' => $formattedResepsi,
-        // ])->setPaper('a4', 'landscape');
-
-        $pdf = PDF::loadView('coba')->setPaper('a4','landscape');            
+        $pdf = PDF::loadView('modelCard.simplify', [
+            'posts' => $posts,
+            'tanggal_akad' => $formattedAkad,
+            'tanggal_resepsi' => $formattedResepsi,
+        ])->setPaper('a4', 'landscape');     
         
         return $pdf->stream('pdf_file.pdf');
 

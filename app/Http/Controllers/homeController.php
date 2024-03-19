@@ -9,16 +9,14 @@ class homeController extends Controller
 {
     public function index()
     {
-        return view('home',[
-            'posts' => Post::all()->count(),
-            'comments' => Comment::all()->count(),
-        ]);
+        return view('home');
         
     }
-    public function coba($slug)
+    public function coba()
     {
-        $model = Post::where('slug', $slug)->firstOrFail();
-        return view('printUndangan.simplify',['model'=>$model]);
+        $model = Post::where('slug', 'rizaldi-rina')->firstOrFail();
+
+        return view('printUndangan.simplify',['posts'=>$model]);
         
     }
 }

@@ -17,16 +17,19 @@ class postController extends Controller
     {
         $posts = Post::where('slug', $post)->first();
 
+
         if ($posts === null) {
             return abort(404);
         }
 
+        $tamu_undangan = 
         $akad = Carbon::createFromFormat('Y-m-d', $posts->tanggal_akad);
         $formattedAkad = $akad->translatedFormat('l, j F Y');
         $resepsi = Carbon::createFromFormat('Y-m-d', $posts->tanggal_resepsi);
         $formattedResepsi = $resepsi->translatedFormat('l, j F Y');
 
         return view('modelCard.simplify', [
+            'tamu_undangan' => $tamu_undangan,
             'posts' => $posts,
             'tanggal_akad' => $formattedAkad,
             'tanggal_resepsi' => $formattedResepsi,

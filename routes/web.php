@@ -6,11 +6,10 @@ use App\Http\Controllers\homeController;
 use App\Http\Controllers\postController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [homeController::class, 'coba']);
+Route::get('/', [homeController::class, 'index']);
 
-Route::get('/area51', [authenticationController::class, 'index'])->middleware('guest');
-Route::post('/area51', [authenticationController::class, 'authenticate'])->middleware('guest');
-
+Route::get('/admin', [authenticationController::class, 'index'])->middleware('guest');
+Route::post('/admin', [authenticationController::class, 'authenticate'])->middleware('guest');
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [adminController::class, 'index']);
     Route::get('/dashboard/manage', [adminController::class, 'manage']);

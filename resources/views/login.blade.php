@@ -24,7 +24,7 @@
                 <h3>Cerita Bahagianya</h3>
             </div>
             <div class="card-body">
-                <form class="needs-validation" novalidate action="/area51" method="POST">
+                <form class="needs-validation" novalidate action="/admin" method="POST">
                     @csrf
                     <div class="input-group mb-3">
                         <input type="email" name="email" class="form-control" placeholder="Email" required>
